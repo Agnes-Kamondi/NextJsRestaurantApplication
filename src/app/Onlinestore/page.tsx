@@ -42,10 +42,10 @@ const Onlinestore = () => {
                         rating: 4
                     }
                 ].map((item, index) => (
-                    <div key={index} className="flex flex-col items-center">
+                    <div key={index} className="flex flex-col items-center gap-3">
                         <img className="w-64 h-64 rounded-full object-cover mb-4" src={item.imgSrc} alt={item.title} />
-                        <h3 className="text-lg font-medium text-center mb-1">{item.title}</h3>
-                        <p className="text-gray-600 text-center mb-2">{item.description}</p>
+                        <h3 className="text-2xl font-medium text-center mb-1">{item.title}</h3>
+                        <p className="text-gray-600 text-center mb-2 text-xl">{item.description}</p>
                         <div className="flex mb-2">
                             {[...Array(5)].map((_, i) => (
                                 <svg key={i} className={`w-5 h-5 ${i < item.rating ? 'text-yellow-500' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
@@ -53,7 +53,7 @@ const Onlinestore = () => {
                                 </svg>
                             ))}
                         </div>
-                        <button className="mt-2 bg-yellow-500 text-white py-1 px-4 rounded-[10px] hover:bg-yellow-600">Add to cart {item.price}</button>
+                        <button className="mt-2 bg-yellow-500 text-white py-3 px-4 rounded-[20px] hover:bg-yellow-600">Add to cart {item.price}</button>
                     </div>
                 ))}
             </div>

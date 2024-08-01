@@ -1,13 +1,13 @@
 const SpecialOffer = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white rounded-lg shadow-md items-center p-14"> 
-            <div className="flex flex-col gap-14">
-                <div className="bg-yellow-500 text-center text-3xl font-bold text-white py-2 rounded-t-lg w-fit">
+        <div className="grid grid-cols-1 md:grid-cols-2  bg-white rounded-lg items-center p-28"> 
+            <div className="flex flex-col gap-10">
+                <div className="bg-yellow-500 text-center text-3xl font-bold text-white py-2 rounded w-fit ">
                     -50%
                 </div>
                 <h1 className="text-3xl font-bold ">Our Special Offer</h1>
                 <p className="text-gray-700">
-                    Best Cooks and Best Delivery guys at your service. Hot tasty food will
+                    Best Cooks and Best Delivery guys at your service. Hot tasty food will <br />
                     reach you in 60 minutes.
                 </p>
                 <button className="flex items-center justify-center w-[300px] px-4 py-2 bg-yellow-500 text-white font-bold rounded-md hover:bg-yellow-600 transition duration-300">
